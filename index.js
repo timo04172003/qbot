@@ -71,17 +71,11 @@ const sequelize = new Sequelize({
 
 const xpDatabase = sequelize.define('xp', {
     userId: Sequelize.STRING,
-    xp: Sequelize.INTEGER
+    xp: Sequelize.INTEGER,
+    hp: Sequelize.INTEGER
 });
 xpDatabase.sync();
 client.databases.xp = xpDatabase;
-
-const hpDatabase = sequelize.define('hp', {
-    userId: Sequelize.STRING,
-    hp: Sequelize.INTEGER
-});
-hpDatabase.sync();
-client.databases.hp = hpDatabase;
 
 
 let firstShout = true;
