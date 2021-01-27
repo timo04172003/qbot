@@ -22,52 +22,52 @@ module.exports = {
             // }
             Auxilia: {
                 rank: 2,
-                xpNeeded: 0
+                xpNeeded: 0,
                 hpNeeded: 0
             }
             Tiro: {
                 rank: 150,
-                xpNeeded: 15
+                xpNeeded: 15,
                 hpNeeded: 0
             }
             Milites: {
                 rank: 200,
-                xpNeeded: 30
+                xpNeeded: 30,
                 hpNeeded: 0
             }
             Immunes: {
                 rank: 205,
-                xpNeeded: 60
+                xpNeeded: 60,
                 hpNeeded: 0
             }
             Lictoris: {
                 rank: 206,
-                xpNeeded: 120
+                xpNeeded: 120,
                 hpNeeded: 0
             }
             Sesquiplicarius: {
                 rank: 214,
-                xpNeeded: 180
+                xpNeeded: 180,
                 hpNeeded: 5
             }
             Duplicarius: {
                 rank: 215,
-                xpNeeded: 240
+                xpNeeded: 240,
                 hpNeeded: 25
             }
             Triplicarius: {
                 rank: 219,
-                xpNeeded: 300
+                xpNeeded: 300,
                 hpNeeded: 25
             }
             Optio: {
                 rank: 230,
-                xpNeeded: 300
+                xpNeeded: 300,
                 hpNeeded: 50
             }
             Centurion: {
                 rank: 233,
-                xpNeeded: 300
+                xpNeeded: 300,
                 hpNeeded: 100
             }
         ]
