@@ -76,6 +76,14 @@ const xpDatabase = sequelize.define('xp', {
 xpDatabase.sync();
 client.databases.xp = xpDatabase;
 
+const hpDatabase = sequelize.define('hp', {
+    userId: Sequelize.STRING,
+    hp: Sequelize.INTEGER
+});
+hpDatabase.sync();
+client.databases.hp = hpDatabase;
+
+
 let firstShout = true;
 let shout;
 
