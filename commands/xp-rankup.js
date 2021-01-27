@@ -73,12 +73,17 @@ module.exports = {
             },
             defaults: {
                 userId: id,
-                xp: 0
+                xp: 0,
+                hp: 0
             }
         });
+        
+ 
 
         let rankingTo = client.config.xpRankup.roles.reverse().find(role => xpInfo[0].dataValues.xp > role.rank);
-        if(!rankingTo) {
+        let hprankingTo = client.config.xpRankup.roles.reverse().find(role => xpInfo[0].dataValues.hp > role.rank);
+        
+        if(!rankingTo || !hprankingTo) {
             embed.setDescription(`${displayUsername} is not eligible to rank up to any xp roles.`);
             embed.setColor(client.config.colors.error);
             embed.setAuthor(message.author.tag, message.author.displayAvatarURL());
